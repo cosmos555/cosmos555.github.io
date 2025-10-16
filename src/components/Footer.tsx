@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gray-700 pt-6 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} 권보민. All rights reserved.
+            &copy; {currentYear} Kwon Bomin. All rights reserved.
           </p>
         </div>
       </div>
