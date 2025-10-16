@@ -1,0 +1,338 @@
+<html lang="ko">
+
+<head>
+  <meta charset=utf-8>
+  <title>낱말은 새가 듣고</title>
+  <link rel="shortcut icon" href="./src/img/favicon.png">
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+  <script type="text/javascript" src="/js/RorGame.js"></script>
+  <script>
+    window.startGdapi = function () {
+      window.RG = new RorGame();
+      window.RG.admob.setOnShow(() => {
+        if (WG.Sound.bgm !== undefined && WG.Sound.bgm.isMute === false) {
+          G.isMute = true;
+          WG.Sound.muteToggle("all", false);
+        }
+        WG.pause = true;
+        G.isAdplaying = true;
+      });
+      window.RG.admob.setOnFinish(() => {
+        if (G.isMute === true) {
+          WG.Sound.muteToggle("bgm", false);
+          WG.Sound.muteToggle("sfx", false);
+        }
+        WG.pause = false;
+        G.isAdplaying = false;
+        G.tickTime = new Date().getTime();
+      });
+      window.RG.admob.setOnEarnedReward(() => {
+      });
+      window.h5Api = {};
+      h5Api.data = {};
+      h5Api.data.isRank = false;
+      window.startGame();
+    }
+  </script>
+  <script>
+    var G = {};
+    G.lang = window.location.href.split('?lang=')[1];
+    if (G.lang == undefined || G.lang != "cn") G.lang = "ko";
+
+
+    G.loadingOnce = false;
+    G.animateObjNumber = 1;
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    if (script.readyState) { //IE
+      script.onreadystatechange = function () {
+        if (script.readyState == "loaded" || script.readyState == "complete") {
+          script.onreadystatechange = null;
+          window.startGdapi();
+        }
+      };
+    } else { //Others
+      script.onload = function () {
+        window.startGdapi();
+      };
+    }
+    script.src = "./webgame.js ";
+    document.getElementsByTagName("head")[0].appendChild(script);
+
+    window.startGame = function () {
+      WG.init({
+        isUglify: true,
+        modulePath: "./",
+        screen: {
+          rendererType: "webgl",
+          gameWidth: 800,
+          gameHeight: 1280,
+          rendererColor: 0x000000,
+          renderStyle: "fixed",
+        },
+        extrasModuleArr: [],
+        rscArr: [
+          'src/words_' + G.lang + '.json',
+          // 'setting.json',
+          'src/img/main_bg.png',
+          'src/img/game_bg(stage).png',
+          'src/img/game_bg(time).png',
+          'src/img/main_title.png',
+          'src/img/main_time_bt.png',
+          'src/img/main_score_bt.png',
+          'src/img/game_blank.png',
+          'src/img/blank.png', 'src/img/blank_red.png',
+          'src/img/game_back_bt(stage).png',
+          'src/img/game_back_bt(time).png',
+          'src/img/game_help_unlock.png',
+          'src/img/game_help_lock.png',
+          'src/img/game_click.png',
+          'src/img/game_nonclick.png',
+          'src/img/game_answer(stage).png',
+          'src/img/game_answer(time).png',
+          'src/img/game_coin.png',
+          'src/img/game_pop(stage).png',
+          'src/img/game_pop(time).png',
+          'src/img/game_count_panel.png',
+          'src/img/new_record.png',
+          'src/img/restart_button.png',
+          'src/img/best_record_bar.png',
+          'src/img/main_score_bt_click.png',
+          'src/img/main_time_bt_click.png',
+          'src/img/restart_button_click.png',
+          'src/img/game_help_lock_click.png',
+          'src/img/game_help_unlock_click.png',
+          'src/img/game_panel.png',
+          'src/img/main_exit_bt.png',
+          'src/img/main_exit_bt_click.png',
+          'src/img/game_button_option.png',
+          'src/img/game_button_option_click.png',
+          'src/img/option_popup.png',
+
+          'src/img/info_button_dark.png',
+          'src/img/info_button_light.png',
+
+          'src/img/sound_button_dark.png',
+          'src/img/sound_button_light.png',
+
+
+          'src/img/bgm_button.png',
+          'src/img/bgm_button_click.png',
+          'src/img/bgm_button_hold.png',
+
+          'src/img/sfx_button.png',
+          'src/img/sfx_button_click.png',
+          'src/img/sfx_button_hold.png',
+
+
+          'src/img/vibrate_button.png',
+          'src/img/vibrate_button_click.png',
+          'src/img/vibrate_button_hold.png',
+
+          'src/img/sound_bar_bottom.png',
+          'src/img/sound_bar_button.png',
+          'src/img/sound_bar_top.png',
+          'src/img/quiz_mean_box.png',
+          'src/img/game_blank_stage.png',
+          'src/img/game_blank_time.png',
+
+
+          'src/img/vibrate_off_light.png',
+          'src/img/vibrate_on_light.png',
+          'src/img/vibrate_onoff_dark.png',
+
+          'src/img/select_music.png',
+          'src/img/non_select_music.png',
+          'src/img/popup_close.png',
+          'src/img/popup_close_hold.png',
+
+
+          'src/img/word_select_4.png',
+          'src/img/word_non_select_4.png',
+          'src/img/word_bg.png',
+          'src/img/word_click_4.png',
+          'src/img/box_my_word.png',
+          'src/img/kakao_button.png',
+          'src/img/kakao_button_click.png',
+          'src/img/intro.png',
+          'src/img/ad_click.png',
+          'src/img/ad_normal.png',
+
+          'src/img/game_button_tutorial.png',
+          'src/img/game_button_tutorial_click.png',
+          'src/img/tuto_box.png',
+          'src/img/tutorial_1.png',
+          'src/img/tutorial_2.png',
+          'src/img/tutorial_3.png',
+          'src/img/tutorial_4.png',
+          'src/img/tutorial_5.png',
+          'src/img/tuto_exit_button.png',
+
+
+          'src/img/font_big_light.png',
+          'src/img/font_button.png',
+          'src/img/font_button_hold.png',
+          'src/img/font_size_dark.png',
+          'src/img/font_small_light.png',
+
+          'src/img/logo_dic.png',
+
+        ],
+        soundArr: [
+          'src/sound/best1.mp3',
+          'src/sound/best2.mp3',
+          'src/sound/button1.mp3',
+          'src/sound/button2.mp3',
+          'src/sound/button3.mp3',
+          'src/sound/button4.mp3',
+          'src/sound/correct1.mp3',
+          'src/sound/correct2.mp3',
+          'src/sound/correct3.mp3',
+          'src/sound/correct4.mp3',
+          'src/sound/correct5.mp3',
+          'src/sound/correct6.mp3',
+          'src/sound/wrong1.mp3',
+          'src/sound/wrong2.mp3',
+          'src/sound/wrong3.mp3',
+          'src/sound/move1.mp3',
+          'src/sound/move2.mp3',
+          'src/sound/move3.mp3',
+          'src/sound/move4.mp3',
+          'src/sound/hint1.mp3',
+          'src/sound/hint2.mp3',
+          'src/sound/hint3.mp3',
+
+
+          'src/sound/bgm/treehouse_game.mp3',
+          'src/sound/bgm/treehouse_lobby.mp3',
+          'src/sound/bgm/quick.mp3',
+
+          'src/sound/bgm/countryside_game.mp3',
+          'src/sound/bgm/countryside_lobby.mp3',
+
+        ],
+        fontArr: [
+          'src/nanumBold.woff'
+        ],
+        rscProgressCallback: function (e) {
+          if (!G.loadingOnce) {
+            var screen = {
+              width: parseInt(WG.Screen._stageSize.w * (innerWidth / WG.Screen._screenSize.width)),
+              height: parseInt(WG.Screen._stageSize.h * (innerHeight / WG.Screen._screenSize.height))
+            };
+            var barWidth = screen.width / 100 * 70;
+            var main = document.getElementById("main");
+            var bg = document.getElementById("bg");
+            var canvas = document.getElementById("WG_canvas");
+            // main.style.width = "100%";//screen.width + 'px';
+            // main.style.height = "100%";//screen.height + 'px';
+            bg.style.width = "100%";
+            bg.style.height = "100%";
+            bg.style.backgroundSize = 2600 * WG.Screen.ratio + "px " + 1500 * WG.Screen.ratio + "px";
+            document.getElementById("wrap_loading").style.width = barWidth + 'px';
+            document.getElementById("progress").style.backgroundSize = '"' + barWidth + 'px ' + '95%' + '"';
+            canvas.style.width = screen.width;
+            canvas.style.height = screen.height;
+            G.loadingOnce = true;
+          }
+          if (Math.round(e.progress) <= 100)
+            document.getElementById("progress").style.width = e.progress + "%";
+        },
+        sceneArr: [],
+        objArr: [
+          'build/word-1.0.0-hifive.1.min.js'
+        ],
+        layerArr: [],
+        useCamera: false,
+        "mainRoutine": function () { // this=WG
+          // console.log(this)
+        }
+      });
+    }
+  </script>
+
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    .anchor {
+      touch-action: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0px);
+    }
+
+    #WG_canvas {
+      cursor: inherit;
+      background: url("src/img/loadingBackground.png") no-repeat center center;
+      background-size: 100% 100%;
+      background-size: cover;
+      position: fixed;
+    }
+
+    /* 로딩 */
+
+    /* #loading_gif {
+    cursor: inherit;
+    background: url("src/img/7_intro_title.gif") no-repeat center center;
+   
+    position: fixed;
+  } */
+
+    #wrap_loading {
+      background: url("src/img/loadingBar_01.png") no-repeat center center;
+      background-size: 96% 100%;
+      transform: translate3d(-50%, -50%, 0px);
+      position: absolute;
+      top: 60%;
+      height: 1%;
+    }
+
+    #progress {
+      border-radius: 20px;
+      display: inline-block;
+      background: url("src/img/loadingBar_02.png") no-repeat left center;
+      margin-left: 2.5%;
+      transform: translate3d(0, 50%, 0px);
+      max-width: 94.5%;
+      height: 50%;
+    }
+
+    /* #loading_gif {
+    position: absolute;
+    top: 23%;
+    background: url("src/img/7_intro_title.gif") no-repeat center center;
+    background-size: 100% 100%;
+    width: 94%;
+    height: 35%;
+  } */
+
+    #main {
+      position: absolute;
+      overflow: hidden;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div id="main">
+    <div class="anchor" id="WG_canvas">
+      <div class="anchor" id="loading_img"></div>
+      <!-- <div class="anchor" id="loading_gif"></div> -->
+      <div class="anchor" id="wrap_loading">
+        <div id="progress"></div>
+
+      </div>
+    </div>
+    <div id="bg"></div>
+  </div>
+</body>
+
+</html>

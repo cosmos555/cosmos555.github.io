@@ -1,0 +1,622 @@
+{
+  "marlin": {
+    "type": "coin",
+    "price": 0,
+    "life": 5,
+    "damage": 1,
+    "jump": 4,
+    "luck": 4,
+    "star": 1,
+    "grade": "green"
+  },
+  "bat": {
+    "type": "coin",
+    "price": 900,
+    "life": 7,
+    "damage": 1,
+    "jump": 15,
+    "luck": 1,
+    "star": 1,
+    "grade": "green"
+  },
+  "bird": {
+    "type": "coin",
+    "price": 1000,
+    "life": 5,
+    "damage": 1,
+    "jump": 17,
+    "luck": 3,
+    "star": 1.5,
+    "grade": "green"
+  },
+  "bunny": {
+    "type": "coin",
+    "price": 1020,
+    "life": 5,
+    "damage": 1,
+    "jump": 3,
+    "luck": 1,
+    "star": 3,
+    "grade": "green"
+  },
+  "chameleon": {
+    "type": "shop",
+    "price": 1000,
+    "life": 10,
+    "damage": 1,
+    "jump": 8,
+    "luck": 2,
+    "star": 2,
+    "grade": "green"
+  },
+  "chicken": {
+    "type": "ad",
+    "price": 33,
+    "life": 3,
+    "damage": 1,
+    "jump": 11,
+    "luck": 7,
+    "star": 1.5,
+    "grade": "green"
+  },
+  "plant": {
+    "type": "coin",
+    "price": 1050,
+    "life": 6,
+    "damage": 1,
+    "jump": 13,
+    "luck": 3,
+    "star": 1.5,
+    "grade": "green"
+  },
+  "radish": {
+    "type": "coin",
+    "price": 950,
+    "life": 8,
+    "damage": 1,
+    "jump": 5,
+    "luck": 1,
+    "star": 1,
+    "grade": "green"
+  },
+  "pigeon": {
+    "type": "coin",
+    "price": 5400,
+    "life": 11,
+    "damage": 1,
+    "jump": 12,
+    "luck": 4,
+    "star": 2,
+    "grade": "orange"
+  },
+  "cola": {
+    "type": "coin",
+    "price": 5400,
+    "life": 11,
+    "damage": 1,
+    "jump": 4,
+    "luck": 7,
+    "star": 3.5,
+    "grade": "orange"
+  },
+  "hamburger": {
+    "type": "coin",
+    "price": 5300,
+    "life": 13,
+    "damage": 1,
+    "jump": 3,
+    "luck": 7,
+    "star": 1.5,
+    "grade": "orange"
+  },
+  "ghost": {
+    "type": "coin",
+    "price": 5600,
+    "life": 7,
+    "damage": 1,
+    "jump": 20,
+    "luck": 13,
+    "star": 2,
+    "grade": "orange"
+  },
+  "rino": {
+    "type": "coin",
+    "price": 5200,
+    "life": 14,
+    "damage": 1,
+    "jump": 3,
+    "luck": 5,
+    "star": 2,
+    "grade": "orange"
+  },
+  "slime": {
+    "type": "coin",
+    "price": 5200,
+    "life": 9,
+    "damage": 1,
+    "jump": 18,
+    "luck": 10,
+    "star": 2,
+    "grade": "orange"
+  },
+  "snail": {
+    "type": "coin",
+    "price": 5000,
+    "life": 14,
+    "damage": 1,
+    "jump": 1,
+    "luck": 5,
+    "star": 1.5,
+    "grade": "orange"
+  },
+  "trunk": {
+    "type": "coin",
+    "price": 4800,
+    "life": 11,
+    "damage": 1,
+    "jump": 13,
+    "luck": 7,
+    "star": 2,
+    "grade": "orange"
+  },
+  "turtle": {
+    "type": "coin",
+    "price": 5600,
+    "life": 17,
+    "damage": 1,
+    "jump": 2,
+    "luck": 4,
+    "star": 1,
+    "grade": "orange"
+  },
+  "coffee": {
+    "type": "ad",
+    "price": 66,
+    "life": 14,
+    "damage": 1,
+    "jump": 4,
+    "luck": 9,
+    "star": 2.5,
+    "grade": "orange"
+  },
+  "pizza": {
+    "type": "coin",
+    "price": 4200,
+    "life": 10,
+    "damage": 1,
+    "jump": 5,
+    "luck": 6,
+    "star": 2,
+    "grade": "orange"
+  },
+  "toilet": {
+    "type": "shop",
+    "price": 2900,
+    "life": 18,
+    "damage": 1,
+    "jump": 9,
+    "luck": 5,
+    "star": 2.5,
+    "grade": "orange"
+  },
+  "sword": {
+    "type": "ad",
+    "price": 99,
+    "life": 31,
+    "damage": 1,
+    "jump": 7,
+    "luck": 11,
+    "star": 2.5,
+    "grade": "red"
+  },
+  "flag_korea": {
+    "type": "coin",
+    "price": 14900,
+    "life": 30,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_argentina": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_australia": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_austria": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_brazil": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_canada": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_china": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_colombia": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_czech_republic": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_france": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_germany": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_india": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_indonesia": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_italy": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_japan": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_mexico": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_netherlands": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_portugal": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_republic_of_south_africa": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_russia": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_saudi_arabia": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_spain": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_switzerland": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_thailand": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_turkey": {
+    "type": "coin",
+    "price": 14900,
+    "life": 18,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_united_arab_emirates": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_united_kingdoms": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "flag_united_states_of_america": {
+    "type": "coin",
+    "price": 14900,
+    "life": 28,
+    "damage": 1,
+    "jump": 8,
+    "luck": 10,
+    "star": 1.5,
+    "grade": "red"
+  },
+  "penguin": {
+    "type": "coin",
+    "price": 14900,
+    "life": 25,
+    "damage": 1,
+    "jump": 6,
+    "luck": 13,
+    "star": 2,
+    "grade": "red"
+  },
+  "missile": {
+    "type": "shop",
+    "price": 4900,
+    "life": 33,
+    "damage": 2,
+    "jump": 7,
+    "luck": 12,
+    "star": 2.5,
+    "grade": "red"
+  },
+  "droppop": {
+    "type": "coin",
+    "price": 14900,
+    "life": 26,
+    "damage": 1,
+    "jump": 17,
+    "luck": 17,
+    "star": 2.5,
+    "grade": "red"
+  },
+  "paperplane": {
+    "type": "coin",
+    "price": 14900,
+    "life": 27,
+    "damage": 1,
+    "jump": 14,
+    "luck": 17,
+    "star": 2.5,
+    "grade": "red"
+  },
+  "dragon": {
+    "type": "shop",
+    "price": 9900,
+    "life": 50,
+    "damage": 2,
+    "jump": 10,
+    "luck": 15,
+    "star": 4,
+    "grade": "black"
+  },
+  "unicorn": {
+    "type": "coin",
+    "price": 29900,
+    "life": 43,
+    "damage": 2,
+    "jump": 9,
+    "luck": 23,
+    "star": 3.5,
+    "grade": "black"
+  },
+  "baren": {
+    "type": "coin",
+    "price": 29900,
+    "life": 47,
+    "damage": 2,
+    "jump": 8,
+    "luck": 15,
+    "star": 4,
+    "grade": "black"
+  },
+  "desert": {
+    "type": "coin",
+    "price": 29900,
+    "life": 39,
+    "damage": 2,
+    "jump": 10,
+    "luck": 22,
+    "star": 3,
+    "grade": "black"
+  },
+  "forest": {
+    "type": "coin",
+    "price": 29900,
+    "life": 49,
+    "damage": 2,
+    "jump": 10,
+    "luck": 11,
+    "star": 4.5,
+    "grade": "black"
+  },
+  "ice": {
+    "type": "coin",
+    "price": 29900,
+    "life": 43,
+    "damage": 2,
+    "jump": 12,
+    "luck": 17,
+    "star": 4,
+    "grade": "black"
+  },
+  "lava": {
+    "type": "coin",
+    "price": 29900,
+    "life": 44,
+    "damage": 2,
+    "jump": 15,
+    "luck": 14,
+    "star": 4,
+    "grade": "black"
+  },
+  "ocean": {
+    "type": "coin",
+    "price": 29900,
+    "life": 46,
+    "damage": 2,
+    "jump": 11,
+    "luck": 20,
+    "star": 2.5,
+    "grade": "black"
+  },
+  "terran": {
+    "type": "coin",
+    "price": 29900,
+    "life": 40,
+    "damage": 2,
+    "jump": 8,
+    "luck": 19,
+    "star": 3,
+    "grade": "black"
+  }
+}
