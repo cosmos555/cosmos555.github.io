@@ -30,16 +30,15 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "잡캐키우기 온라인",
-      tags: ["MORPG","방치형","PC","모바일"],
-      description: "방치형 MORPG 게임으로, 계약금 5억, 일 매출 5천을 달성한 성공적인 프로젝트입니다. 구글 창구 프로그램 3기 선정 및 충남 게임상 1위를 수상했습니다.",
-      technologies: ["HTML5","WebGL","JavaScript","Unity", "C#", "Node.js", "MySQL", "WebSocket"],
-      period: "2020-2022",
-      company: "ZIP-LAB Inc.",
-      achievements: ["시스템 설계", "UI/UX 구현", "클라이언트 개발", "MORPG 서버 개발", "플랫폼 개발", "운영툴 개발", "게임 전체 기획"],
-      image: "/images/HybridHero.png",
-      repoUrl: "https://github.com/cosmos555/hybrid-hero-portfolio",
-      youtubeUrl: "https://youtu.be/8SUBMH-tEuU"
+      title: "SPARKY GAME",
+      tags: ["K-POP","SaaS","리듬 게임","동작 인식"],
+      description: "K-POP 댄스 리듬 게임으로, 동작 인식을 통해 플레이어의 동작을 인식하고, 점수를 얻는 리듬 게임입니다.",
+      technologies: ["TypeScript", "React", "Node.js", "Mediapipe"],
+      period: "2025",
+      company: "DEVUNLIMIT Inc.",
+      achievements: ["시스템 설계", "UI/UX 구현", "클라이언트 개발", "동작 인식 기술 개발", "리듬 게임 개발", "SaaS 개발"],
+      image: "",
+      youtubeUrl: "https://www.youtube.com/watch?v=qAZwkEBGWko"
     },
     {
       id: 2,
@@ -57,6 +56,19 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
+      title: "잡캐키우기 온라인",
+      tags: ["MORPG","방치형","PC","모바일"],
+      description: "방치형 MORPG 게임으로, 계약금 5억, 일 매출 5천을 달성한 성공적인 프로젝트입니다. 구글 창구 프로그램 3기 선정 및 충남 게임상 1위를 수상했습니다.",
+      technologies: ["HTML5","WebGL","JavaScript","Unity", "C#", "Node.js", "MySQL", "WebSocket"],
+      period: "2020-2022",
+      company: "ZIP-LAB Inc.",
+      achievements: ["시스템 설계", "UI/UX 구현", "클라이언트 개발", "MORPG 서버 개발", "플랫폼 개발", "운영툴 개발", "게임 전체 기획"],
+      image: "/images/HybridHero.png",
+      repoUrl: "https://github.com/cosmos555/hybrid-hero-portfolio",
+      youtubeUrl: "https://youtu.be/8SUBMH-tEuU"
+    },
+    {
+      id: 4,
       title: "코즈믹 온라인",
       tags: ["MMORPG","SF","PC","모바일","HTML5"],
       description: "유럽, 러시아에서 서비스된 SF MMORPG 게임입니다. 10만 유로 수출을 달성했으며, 서버 개발부터 기획, 감독, 운영까지 전담했습니다.",
@@ -69,7 +81,7 @@ const Projects: React.FC = () => {
       youtubeUrl: "https://youtu.be/f498fWwm7gg"
     },
     {
-      id: 4,
+      id: 5,
       title: "Light of Aiaran Online",
       tags: ["MMORPG","PC","모바일"],
       description: "제작 지원 사업을 통해 MMORPG 아이리스M을 PC버전으로 변환하여 필리핀에서 서비스한 게임입니다.",
@@ -81,7 +93,7 @@ const Projects: React.FC = () => {
       youtubeUrl: "https://youtu.be/TI3tFDJq09U"
     },
     {
-      id: 5,
+      id: 6,
       title: "까먹는 용사(가제)",
       tags: ["로그라이트","RPG"],
       description: "개인 프로젝트로 개발 중인 로그라이트 RPG 게임입니다. Unity를 사용하여 개발 전체를 총괄하고 있습니다.",
@@ -94,7 +106,7 @@ const Projects: React.FC = () => {
       youtubeUrl: "https://youtu.be/U_d2WAuGgzk"
     },
     {
-      id: 6,
+      id: 7,
       title: "webgame.js",
       tags: ["HTML5게임","라이브러리","HTML5","JavaScript"],
       description: "정부 R&D 지원사업을 통해 개발한 HTML5(WebGL) + JavaScript 기반 웹게임 엔진 프레임워크입니다.",
@@ -106,7 +118,7 @@ const Projects: React.FC = () => {
       liveUrl: "http://webgamejs.zip-lab.co.kr"
     },
     {
-      id: 7,
+      id: 8,
       title: "권서방 - AI사주풀이 서비스",
       tags: ["AI","웹 서비스","PC","모바일"],
       description: "AI 사주풀이 서비스로, 사용자가 입력한 생년월일을 기반으로 사주를 분석하고 추천 서비스를 제공합니다.",
@@ -118,7 +130,7 @@ const Projects: React.FC = () => {
       liveUrl: "https://saju.im"
     },
     {
-      id: 8,
+      id: 9,
       title: "gamify.js",
       tags: ["데이터 게임화","라이브러리","HTML5","JavaScript"],
       description: "정부 R&D 지원사업을 통해 개발한 HTML5(WebGL) + JavaScript 기반 데이터 게임화 라이브러리입니다.",
@@ -130,7 +142,7 @@ const Projects: React.FC = () => {
       liveUrl: "http://gamify.zip-lab.co.kr/#/reference/document"
     },
     {
-      id: 9,
+      id: 10,
       title: "메이헴의 유산",
       tags: ["방치형","RPG","PC","모바일","HTML5"],
       description: "연 매출 5천만 원을 달성한 수집형 RPG 게임입니다. 문체부 주관 이달의 우수게임으로 선정되었으며, 일본 퍼블리싱 계약을 통해 일본에서 서비스하였습니다.",
@@ -142,7 +154,7 @@ const Projects: React.FC = () => {
       youtubeUrl: "https://www.youtube.com/watch?v=xVhCggmvAzk"
     },
     {
-      id: 10,
+      id: 11,
       title: "Crush The Block",
       tags: ["캐주얼","액션","HTML5","플랫폼"],
       description: "블럭을 부수며 앞으로 나아가는 게임입니다.",
@@ -154,7 +166,7 @@ const Projects: React.FC = () => {
       liveUrl: "https://cosmos555.github.io/game/flappy/"
     },
     {
-      id: 11,
+      id: 12,
       title: "히로익 택틱스",
       tags: ["오토배틀러","CCG","PC","모바일","HTML5"],
       description: "오토배틀러와 수집형 카드 게임을 융합한 새로운 장르의 전략 게임입니다. 기획과 플랫폼 개발에 참여하였습니다.",
@@ -166,7 +178,7 @@ const Projects: React.FC = () => {
       youtubeUrl: "https://youtu.be/fZ4eCgthccc"
     },
     {
-      id: 12,
+      id: 13,
       title: "레바의 신박한 터치터치",
       tags: ["페이스북 인스턴트 게임","캐주얼"],
       description: "페이스북 인스턴트 게임으로 기획되어 레진코믹스와의 파트너십으로 개발된 캐주얼 게임입니다.",
@@ -178,7 +190,7 @@ const Projects: React.FC = () => {
       youtubeUrl: "https://www.youtube.com/embed/TqAdDOfROa0"
     },
     {
-      id: 13,
+      id: 14,
       title: "DROP POP",
       tags: ["캐주얼","퍼즐"],
       description: "알카노이드의 형식을 패러디하여 방향을 아래로 전환한 캐주얼 퍼즐 게임입니다.",
@@ -190,7 +202,7 @@ const Projects: React.FC = () => {
       youtubeUrl: "https://youtu.be/KEriUeQyDhU"
     },
     {
-      id: 14,
+      id: 15,
       title: "낱말은 새가 듣고",
       tags: ["캐주얼","퍼즐"],
       description: "교육용으로 개발된 한글 낱말 퍼즐 게임입니다.",
@@ -202,7 +214,7 @@ const Projects: React.FC = () => {
       liveUrl: "https://cosmos555.github.io/game/word/"
     },
     {
-      id: 15,
+      id: 16,
       title: "SEA POP",
       tags: ["캐주얼","퍼즐"],
       description: "운영하는 게임 플랫폼 서비스에 추가할 게임으로 기획하여 개발한 게임입니다.",
@@ -214,7 +226,7 @@ const Projects: React.FC = () => {
       liveUrl: "https://cosmos555.github.io/game/seapop/"
     },
     {
-      id: 16,
+      id: 17,
       title: "이노센트 워리어",
       tags: ["로그라이트","액션","PC","모바일","HTML5"],
       description: "로그라이트 액션 게임으로 기획과 플랫폼 개발에 참여하였습니다.",
@@ -226,7 +238,7 @@ const Projects: React.FC = () => {
       youtubeUrl: "https://www.youtube.com/watch?v=OFLYSvZ15pY"
     },
     {
-      id: 17,
+      id: 18,
       title: "HI5GAME 게임 플랫폼",
       tags: ["게임 플랫폼","보상형 게임","PC","모바일"],
       description: "캐주얼 게임 플랫폼으로 랭킹 시스템을 적용해 보상을 지급한 기존 게임 허브 시스템을 컬쳐랜드와 협약해 컬쳐캐시를 지급하는 서비스입니다.",
@@ -238,7 +250,7 @@ const Projects: React.FC = () => {
       youtubeUrl: "https://youtu.be/Yxab0-RXnK8"
     },
     {
-      id: 18,
+      id: 19,
       title: "ROR 게임 플랫폼",
       tags: ["게임 플랫폼","블록체인","보상형 게임","PC","모바일"],
       description: "캐주얼 게임 플랫폼으로 랭킹 시스템을 적용해 보상으로 블록체인 코인을 지급하는 시스템을 갖춘 게임 허브입니다.",
