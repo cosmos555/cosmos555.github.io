@@ -17,6 +17,19 @@ const History: React.FC = () => {
               {/* Timeline Line */}
               <div className="absolute left-0 md:left-8 top-0 bottom-0 w-0.5 bg-green-600"></div>
               
+              <div className="space-y-12">
+                <div className="relative pl-8 md:pl-16">
+                  <div className="absolute left-0 md:left-4 top-2 w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow-lg"></div>
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <div className="text-sm font-semibold text-green-600 mb-2">2015.12 - 현재</div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">마드라스체크 주식회사 - SaaS 개발실/실장</h3>
+                    <p className="text-gray-600">SaaS 개발</p>
+                    <p className="text-gray-600">풀스택 프로그래밍</p>
+                    <p className="text-gray-600">프로젝트 관리</p>
+                  </div>
+                </div>
+              </div>
+
               {/* Timeline Items */}
               <div className="space-y-12">
                 <div className="relative pl-8 md:pl-16">
@@ -33,6 +46,7 @@ const History: React.FC = () => {
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
 
