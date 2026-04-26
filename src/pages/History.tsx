@@ -21,7 +21,7 @@ const History: React.FC = () => {
                 <div className="relative pl-8 md:pl-16">
                   <div className="absolute left-0 md:left-4 top-2 w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow-lg"></div>
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <div className="text-sm font-semibold text-green-600 mb-2">2015.12 - 현재</div>
+                    <div className="text-sm font-semibold text-green-600 mb-2">2025.12 - 현재</div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">마드라스체크 주식회사 - SaaS 개발실/실장</h3>
                     <p className="text-gray-600">SaaS 개발</p>
                     <p className="text-gray-600">풀스택 프로그래밍</p>
